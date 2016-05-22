@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="submissions_grid_column_spacing">32dp</dimen>
+
+    <dimen name="submission_grid_item_height">300dp</dimen>
+</resources>

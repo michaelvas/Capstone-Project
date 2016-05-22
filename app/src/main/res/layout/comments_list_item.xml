@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Space
+            android:id="@+id/comment_toolbar_spacer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <Space
+            android:id="@+id/comment_text_spacer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/comment_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:popupTheme="@style/Toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@id/comment_toolbar_spacer"
+            android:layout_toRightOf="@id/comment_toolbar_spacer"
+            app:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/comment_expand_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:background="@android:color/transparent"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/comment_author_and_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:singleLine="true"
+                    android:textColor="@color/greyDark"
+                    tools:text="author - 354"/>
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/comment_toolbar"
+            android:layout_alignRight="@id/comment_toolbar"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/comment_toolbar"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/comment_text_spacer"
+            android:layout_toRightOf="@id/comment_text_spacer"
+            android:textColor="@android:color/primary_text_light"
+            android:textIsSelectable="true"
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus risus lectus, varius ut nibh maximus, tristique egestas risus."/>
+
+        <View
+            android:id="@+id/comment_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/comment_text"
+            android:layout_toEndOf="@id/comment_text_spacer"
+            android:layout_toRightOf="@id/comment_text_spacer"
+            android:background="@color/grey"/>
+
+    </RelativeLayout>
+
+</layout>

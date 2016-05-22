@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="tablet_mode">false</bool>
+    <bool name="portrait_mode">true</bool>
+    <integer name="grid_columns">1</integer>
+</resources>

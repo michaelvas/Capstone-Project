@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "555102997880",
+    "project_id": "readerforreddit"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555102997880:android:64b30ee2fd445871",
+        "android_client_info": {
+          "package_name": "com.michaelva.redditreader"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhO6DlfWDynNfeJjA6DGNG1UboSmMFeB8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-67352501-3"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

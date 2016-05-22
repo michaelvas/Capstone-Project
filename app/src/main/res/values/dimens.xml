@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="ads_vertical_margin">8dp</dimen>
+
+    <dimen name="submission_title_vertical_margin">8dp</dimen>
+    <dimen name="submission_title_margin_right">72dp</dimen>
+    <dimen name="submission_content_text_margin">16dp</dimen>
+    <dimen name="submission_action_button_padding">12dp</dimen>
+
+
+    <!-- 70 dp * <N cells> - 30dp -->
+    <dimen name="widget_default_width">250dp</dimen> <!-- 3 cells -->
+    <dimen name="widget_default_height">250dp</dimen> <!-- 3 cells -->
+
+
+</resources>

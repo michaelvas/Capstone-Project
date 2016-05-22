@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_dismiss"
+        android:title="@string/action_dismiss"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/action_reload_live_data"
+        app:showAsAction="never"/>
+
+</menu>

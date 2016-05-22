@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/submission_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/submission_content_text_margin"
+            android:layout_marginLeft="@dimen/submission_content_text_margin"
+            android:layout_marginRight="@dimen/submission_content_text_margin"
+            android:layout_marginEnd="@dimen/submission_content_text_margin"
+            android:layout_marginTop="@dimen/submission_title_vertical_margin"
+            android:layout_marginBottom="@dimen/submission_title_vertical_margin"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/primary_text_light"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ads_vertical_margin"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"/>
+
+        <FrameLayout
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/submission_title"
+            android:layout_above="@id/adView"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comments_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-2dp"/> <!-- this will hide the divider under the last item in the list -->
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:textAlignment="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@style/ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</layout>

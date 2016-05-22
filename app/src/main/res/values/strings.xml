@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">A Reader For Reddit</string>
+
+    <string name="activity_login">Reddit Login</string>
+    <string name="activity_subreddits_list">Select Subreddit(s)</string>
+    <string name="activity_comments_list">Comments</string>
+    <string name="activity_new_comment">Reply</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="message_not_synced_yet">Application is waiting to retrieve data from Reddit servers</string>
+    <string name="message_sync_in_progress">Application is retrieving data from Reddit servers</string>
+    <string name="message_sync_complete">Application successfully retrieved data from Reddit servers</string>
+    <string name="message_no_valid_subreddits">There are no valid subreddits. Try subscribing to other subreddits on reddit.com</string>
+    <string name="message_no_valid_submissions">Selected subreddits do not have any valid submissions. Try refreshing or select other subreddits</string>
+    <string name="message_ratelimit_error">Server asks to wait <xliff:g example="5 minutes" id="wait_time">%1$s</xliff:g> before retrying this action</string>
+    <string name="message_server_invalid">The server is not responding</string>
+    <string name="message_internal_error">Internal error. Please try later</string>
+    <string name="message_no_internet">Internet connection not available</string>
+    <string name="message_not_authorized">Application will not be able to access Reddit services without authorization. Please login</string>
+    <string name="message_no_subreddits_selected">Application works by monitoring selected subreddits. Please select one or more subreddits</string>
+    <string name="message_only_single_submission">There is only single valid submission. Try refreshing or select other subreddits</string>
+    <string name="message_local_comments_out_of_sync">Comments appear to be out of sync with Reddit servers. Please reload the comments</string>
+    <string name="message_no_comments">Be the first to comment on this post!</string>
+
+    <string name="button_try_again">try again</string>
+    <string name="button_login">login</string>
+    <string name="button_select">select</string>
+
+    <string name="collapse_comments_tree_contect_description">Hide this comment and related replies</string>
+    <string name="collapse_comment_contect_description">Hide this comment</string>
+    <string name="expand_comments_tree_contect_description">Show this comment and related replies</string>
+    <string name="expand_comment_contect_description">Show this comment</string>
+    <string name="load_more_comments_contect_description">Load more comments</string>
+    <string name="open_submission_in_external_viewer_contect_description">Open detailed view of this post</string>
+    <string name="weblink_submission_contect_description">This post is a link to a website</string>
+    <string name="view_submission_comments_contect_description">View this post comments</string>
+    <string name="submission_upvote_contect_description">Upvote this post</string>
+    <string name="submission_undo_upvote_contect_description">Undo upvote for this post</string>
+    <string name="submission_downvote_contect_description">Downvote this post</string>
+    <string name="submission_undo_downvote_contect_description">Undo downvote for this post</string>
+    <string name="subreddit_selection_contect_description">
+        Check to show posts from /r/<xliff:g example="gaming" id="subreddit_title">%1$s</xliff:g>
+    </string>
+
+
+
+    <string name="subreddit_name" translatable="false">
+        /r/<xliff:g example="gaming" id="subreddit_title">%1$s</xliff:g>
+    </string>
+
+    <string name="comment_author_and_score">
+        <xliff:g example="somebody" id="subreddit_title">%1$s</xliff:g> - <xliff:g example="345" id="subreddit_title">%2$s</xliff:g>
+    </string>
+
+    <string name="action_subreddits_list">Select Subreddits</string>
+    <string name="action_change_user">Change User</string>
+    <string name="action_login">Login</string>
+    <string name="action_dismiss">Show Another Post</string>
+    <string name="action_reply_submission">Reply to Post</string>
+    <string name="action_reload_subreddits">Reload Subreddits</string>
+    <string name="action_reload_comments">Reload Comments</string>
+    <string name="action_reload_submissions">Reload Posts</string>
+    <string name="action_reload_live_data">Reload Comments and Score</string>
+    <string name="action_upvote_comment">Upvote</string>
+    <string name="action_undo_upvote_comment">Undo Upvote</string>
+    <string name="action_downvote_comment">Downvote</string>
+    <string name="action_undo_downvote_comment">Undo Downvote</string>
+    <string name="action_reply_comment">Reply</string>
+    <string name="action_submit">Submit</string>
+
+</resources>
