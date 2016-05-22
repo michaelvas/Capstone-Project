@@ -139,8 +139,8 @@ public class SubmissionsGridAdapter extends RecyclerView.Adapter<SubmissionsGrid
 				// if preview image url is null (submission has no preview), picasso will present the placeholder
 				Picasso.with(mContext)
 						.load(cursor.getString(SubmissionLoader.COL_PREVIEW_IMAGE))
-						.placeholder(R.drawable.ic_web)
-						.error(R.drawable.ic_broken_image)
+						.placeholder(R.drawable.art_weblink)
+						.error(R.drawable.art_broken_image)
 						.tag(String.valueOf(id))
 						.into(mBinding.contentPreview);
 
@@ -164,8 +164,10 @@ public class SubmissionsGridAdapter extends RecyclerView.Adapter<SubmissionsGrid
 
 				Picasso.with(mContext)
 						.load(imageUrl)
-						.placeholder(R.drawable.ic_web)
-						.error(R.drawable.ic_broken_image)
+						.resizeDimen(R.dimen.submission_grid_item_height, R.dimen.submission_grid_item_height)
+						.centerCrop()
+						.placeholder(R.drawable.art_weblink)
+						.error(R.drawable.art_broken_image)
 						.tag(String.valueOf(id))
 						.into(mBinding.contentImage);
 

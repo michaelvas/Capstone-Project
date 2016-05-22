@@ -144,8 +144,8 @@ public class SubmissionHolder {
 			// if preview image url is null (submission has no preview), picasso will present the placeholder
 			Picasso.with(mContext)
 				.load(cursor.getString(SubmissionLoader.COL_PREVIEW_IMAGE))
-				.placeholder(R.drawable.ic_web)
-				.error(R.drawable.ic_broken_image)
+				.placeholder(R.drawable.art_weblink)
+				.error(R.drawable.art_broken_image)
 				.tag(cursor.getString(SubmissionLoader.COL_ID))
 				.into(mBinding.contentPreview);
 
@@ -159,8 +159,8 @@ public class SubmissionHolder {
 
 			Picasso.with(mContext)
 				.load(cursor.getString(SubmissionLoader.COL_URL))
-				.placeholder(R.drawable.ic_web)
-				.error(R.drawable.ic_broken_image)
+				.placeholder(R.drawable.art_weblink)
+				.error(R.drawable.art_broken_image)
 				.tag(cursor.getString(SubmissionLoader.COL_ID))
 				.into(mBinding.contentImage);
 
@@ -174,8 +174,8 @@ public class SubmissionHolder {
 
 			Picasso.with(mContext)
 					.load(cursor.getString(SubmissionLoader.COL_PREVIEW_IMAGE))
-					.placeholder(R.drawable.ic_web)
-					.error(R.drawable.ic_broken_image)
+					.placeholder(R.drawable.art_weblink)
+					.error(R.drawable.art_broken_image)
 					.tag(cursor.getString(SubmissionLoader.COL_ID))
 					.into(mBinding.contentImage);
 

@@ -121,11 +121,11 @@ public class WidgetRemoteViewsService extends IntentService {
 									.get();
 							views.setImageViewBitmap(R.id.widget_content_image, bitmap);
 						} catch (Exception e) {
-							views.setImageViewResource(R.id.widget_content_image, R.drawable.ic_broken_image);
+							views.setImageViewResource(R.id.widget_content_image, R.drawable.art_broken_image);
 						}
 						views.setContentDescription(R.id.widget_content_image, title);
 					} else {
-						views.setImageViewResource(R.id.widget_content_image, R.drawable.ic_web);
+						views.setImageViewResource(R.id.widget_content_image, R.drawable.art_weblink);
 						views.setContentDescription(R.id.widget_content_image, getString(R.string.weblink_submission_contect_description));
 					}
 				}
